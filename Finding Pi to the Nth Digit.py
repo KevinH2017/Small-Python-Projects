@@ -9,3 +9,4 @@ if pi_digit > 52:
     print("ERROR, TOO MUCH, 50 MAXIMUM")
 else:
     print("{:.{}}".format(math.pi,pi_digit))
+print("Finished, Closing...")

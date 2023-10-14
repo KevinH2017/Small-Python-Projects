@@ -9,3 +9,4 @@ if e_digit > 55:
     print("ERROR, TOO MUCH, 53 MAXIMUM")
 else:
     print("{:.{}}".format(math.e,e_digit))
+print("Finished, Closing...")

@@ -63,6 +63,7 @@ def mergeSort(arr, l, r):
 
 # arr = [12, 11, 13, 5, 6, 7]	# Test array
 
+# User input for list of integers. Input must be integers
 arr = list(map(int, input("Enter multiple integers (seperated by spaces): ").split()))
 n = len(arr)
 print("Given array is")

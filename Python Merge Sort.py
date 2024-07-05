@@ -61,16 +61,25 @@ def mergeSort(arr, l, r):
 		merge(arr, l, m, r)
 
 
-# arr = [12, 11, 13, 5, 6, 7]	# Test array
+# Keeps looping until valid input
+while True:
+	try:
+		# User input for list of integers. Maps each integer to list index value
+		arr = list(map(int, input("Enter multiple integers (seperated by spaces): ").split()))
+		n = len(arr)
+		print("Given array is")
+		for i in range(n):
+			print("%d" % arr[i],end=" ")
 
-# User input for list of integers. Input must be integers
-arr = list(map(int, input("Enter multiple integers (seperated by spaces): ").split()))
-n = len(arr)
-print("Given array is")
-for i in range(n):
-	print("%d" % arr[i],end=" ")
+		mergeSort(arr, 0, n-1)
+		print("\n\nSorted array is")
+		for i in range(n):
+			print("%d" % arr[i],end=" ")
+	
+	except ValueError:
+		print("Error! Invalid Input!")
+		print("Please enter only Integer values!")
+		continue
 
-mergeSort(arr, 0, n-1)
-print("\n\nSorted array is")
-for i in range(n):
-	print("%d" % arr[i],end=" ")
+	else:
+		break

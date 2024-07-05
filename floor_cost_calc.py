@@ -1,6 +1,6 @@
 #!/usr/bin/python
 def ask():
-    cost = float(input("Cost por m^2: "))
+    cost = float(input("Cost per m^2: "))
     width = float(input("meters of the width: "))
     height = float(input("meters of the height: "))
     return cost, width, height
